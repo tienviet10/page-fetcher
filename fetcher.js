@@ -23,6 +23,7 @@ const writeToFile = (body) => {
       process.exit(0);
     } else {
       printTemplate(body.length, args[1]);
+      process.exit(0);
     }
   });
 };
@@ -55,4 +56,12 @@ request(args[0], (error, response, body) => {
 
 
 
+// process.stdin.on('data', function(message){
+//  client.write(message);
+//})
 
+// // On the server side -> set to utf8 to decode <Buffer ...>
+// let message = "setName Viet";
+// if (message.startsWith('setName ')) {
+//   const clientName = message.replace(/setName /,'');
+// }
