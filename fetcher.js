@@ -56,10 +56,6 @@ request(args[0], (error, response, body) => {
 
 
 
-// process.stdin.on('data', function(message){
-//  client.write(message);
-//})
-
 // // On the server side -> set to utf8 to decode <Buffer ...>
 // let message = "setName Viet";
 // if (message.startsWith('setName ')) {
